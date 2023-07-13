@@ -9,7 +9,8 @@ public class MyTaskOne implements Tasklet {
     @Override
     public RepeatStatus execute(StepContribution stepContribution, ChunkContext chunkContext) throws Exception {
         System.out.println("Starting my first task");
-
+        int sum = 5 + 5;
+        System.out.println(sum);
 //        Code Here
         System.out.println("finishing my first task");
         return RepeatStatus.FINISHED;
